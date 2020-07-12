@@ -1,0 +1,18 @@
+{:deps {:aliases [:cljs]}
+ :builds
+ {:handler
+  {:target :node-library
+   :output-to "handler.js"
+   :exports-var serverless-demo.core/exports
+   :compiler-options
+   {:source-map true
+    :warnings-as-errors true}
+   :devtools
+   {:preloads [shadow.remote.runtime.cljs.browser]}}
+  :test
+  {:target    :node-test
+   :output-to "test.js"}
+  :autotest
+  {:target    :node-test
+   :output-to "test.js"
+   :autorun   true}}}

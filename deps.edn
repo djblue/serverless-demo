@@ -1,0 +1,17 @@
+{:paths ["src" "test"]
+ :aliases
+ {:cljs
+  {:extra-deps
+   {org.clojure/clojurescript {:mvn/version "1.10.758"}}}
+  :cider
+  {:extra-deps
+   {cider/cider-nrepl {:mvn/version "0.24.0"}}}
+  :shadow
+  {:main-opts ["-m" "shadow.cljs.devtools.cli"]
+   :extra-deps {thheller/shadow-cljs {:mvn/version "2.10.14"}}}
+  :kondo
+  {:main-opts ["-m" "clj-kondo.main"]
+   :extra-deps {clj-kondo {:mvn/version "2020.06.21"}}}
+  :cljfmt
+  {:main-opts ["-m" "cljfmt.main"]
+   :extra-deps {cljfmt {:mvn/version "0.6.8"}}}}}

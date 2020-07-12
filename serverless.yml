@@ -1,0 +1,28 @@
+# For a complete reference of serverless.yml goto:
+# - https://www.serverless.com/framework/docs/providers/aws/guide/serverless.yml/
+
+service: serverless-demo
+
+plugins:
+  - serverless-prune-plugin
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+
+package:
+  include:
+    - handler.js
+    - handler.js.map
+  exclude:
+    - '**'
+    - '!node_modules/**'
+
+functions:
+  hello:
+    memorySize: 512
+    handler: handler.hello
+    events:
+      - http:
+          path: hello
+          method: get
