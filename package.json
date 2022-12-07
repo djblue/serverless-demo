@@ -7,7 +7,7 @@
     "source-map-support": "^0.5.19"
   },
   "devDependencies": {
-    "serverless": "^1.74.1",
+    "serverless": "^3.25.1",
     "serverless-prune-plugin": "^1.4.3",
     "ws": "^7.3.1"
   },
