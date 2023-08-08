@@ -5,3 +5,6 @@ node_modules
 .shadow-cljs/
 handler.js*
 test.js
+.clj-kondo/
+.lsp/
+.portal/
