@@ -45,3 +45,7 @@ deploy/dev: handler.js
 
 remove/dev:
 	npx serverless remove --verbose
+
+deps:
+	npm update
+	clj -M:antq -m antq.core --upgrade

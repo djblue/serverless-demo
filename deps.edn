@@ -14,4 +14,8 @@
    :extra-deps {clj-kondo {:mvn/version "2020.06.21"}}}
   :cljfmt
   {:main-opts ["-m" "cljfmt.main"]
-   :extra-deps {cljfmt {:mvn/version "0.6.8"}}}}}
+   :extra-deps {cljfmt {:mvn/version "0.6.8"}}}
+  :antq
+  {:replace-deps
+   {com.github.liquidz/antq {:mvn/version "2.5.1095"}
+    org.slf4j/slf4j-nop     {:mvn/version "2.0.7"}}}}}
