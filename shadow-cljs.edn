@@ -1,4 +1,5 @@
 {:deps {:aliases [:cljs]}
+ :nrepl {:middleware [portal.nrepl/wrap-portal]}
  :builds
  {:handler
   {:target :node-library

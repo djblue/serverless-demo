@@ -6,7 +6,7 @@ node_modules: package.json
 	npm ci
 
 dev: node_modules
-	clojure -M:cider:cljs:shadow watch handler autotest
+	clojure -M:dev:shadow watch handler autotest
 
 handler.js: node_modules $(wildcard src/**/*)
 	clojure -M:cljs:shadow release handler

@@ -1,11 +1,9 @@
 {:paths ["src" "test"]
  :aliases
- {:cljs
+ {:dev
   {:extra-deps
-   {org.clojure/clojurescript {:mvn/version "1.11.60"}}}
-  :cider
-  {:extra-deps
-   {cider/cider-nrepl {:mvn/version "0.34.0"}}}
+   {djblue/portal     {:mvn/version "0.45.1"}
+    cider/cider-nrepl {:mvn/version "0.34.0"}}}
   :shadow
   {:main-opts ["-m" "shadow.cljs.devtools.cli"]
    :extra-deps {thheller/shadow-cljs {:mvn/version "2.25.2"}}}

@@ -13,6 +13,9 @@
 
 (comment
   ;; useful debugging tips
+  (require 'portal.api)
+  (add-tap #'portal.api/submit)
+  (portal.api/open)
 
   ;; good old println should work fine
   (println {:hello :world})
