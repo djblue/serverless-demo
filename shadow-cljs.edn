@@ -9,7 +9,8 @@
    {:source-map true
     :warnings-as-errors true}
    :devtools
-   {:preloads [shadow.remote.runtime.cljs.browser]}}
+   {:preloads [shadow.remote.runtime.cljs.browser
+               devtools.preload]}}
   :test
   {:target    :node-test
    :output-to "test.js"}
