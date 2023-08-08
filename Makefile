@@ -6,23 +6,23 @@ node_modules: package.json
 	npm ci
 
 dev: node_modules
-	clojure -A:cider:cljs:shadow watch handler autotest
+	clojure -M:cider:cljs:shadow watch handler autotest
 
 handler.js: node_modules $(wildcard src/**/*)
-	clojure -A:cljs:shadow release handler
+	clojure -M:cljs:shadow release handler
 
 test.js: node_modules $(wildcard src/**/*) $(wildcard test/**/*)
-	clojure -A:cljs:shadow compile test
+	clojure -M:cljs:shadow compile test
 
 node:
 	node --inspect handler.js
 
 fmt:
-	clojure -A:cljfmt fix
+	clojure -M:cljfmt fix
 
 lint:
-	clojure -A:kondo --lint src
-	clojure -A:cljfmt check
+	clojure -M:kondo --lint src
+	clojure -M:cljfmt check
 
 clean:
 	rm -rf handler.js handler.js.map test.js

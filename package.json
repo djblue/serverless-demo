@@ -4,12 +4,12 @@
   "description": "",
   "main": "handler.js",
   "dependencies": {
-    "source-map-support": "^0.5.19"
+    "source-map-support": "^0.5.21"
   },
   "devDependencies": {
-    "serverless": "^3.25.1",
-    "serverless-prune-plugin": "^1.4.3",
-    "ws": "^7.3.1"
+    "serverless": "^3.34.0",
+    "serverless-prune-plugin": "^2.0.2",
+    "ws": "^8.13.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
